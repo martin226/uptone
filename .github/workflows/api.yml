@@ -49,6 +49,6 @@ jobs:
       - name: Install library
         run: poetry install --no-interaction
       - name: Install NLTK resources
-        run: python -m nltk.downloader punkt stopwords vader_lexicon averaged_perceptron_tagger wordnet
+        run: poetry run python -m nltk.downloader punkt stopwords vader_lexicon averaged_perceptron_tagger wordnet
       - name: Run tests
         run: poetry run pytest
