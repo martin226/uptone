@@ -48,7 +48,5 @@ jobs:
         run: poetry install --no-interaction --no-root
       - name: Install library
         run: poetry install --no-interaction
-      - name: Install NLTK resources
-        run: poetry run python -m nltk.downloader punkt stopwords vader_lexicon averaged_perceptron_tagger wordnet
-      - name: Run tests
-        run: poetry run pytest
+      - name: Run Linter
+        run: poetry run black --check .
