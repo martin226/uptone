@@ -8,6 +8,8 @@ authors = ["Martin Sit <46298951+martin226@users.noreply.github.com>"]
 python = "^3.9"
 Flask = "^2.1.2"
 nltk = "^3.7"
+demoji = "^1.1.0"
+contractions = "^0.1.72"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
