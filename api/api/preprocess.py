@@ -8,7 +8,7 @@ import string
 
 tweet_tokenizer = TweetTokenizer(preserve_case=False, strip_handles=True)
 
-stop_words = set(stopwords.words('english'))
+stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
 
 abbreviations = {
@@ -61,25 +61,25 @@ def twitter_preprocess(text: str):
         if token in string.punctuation:
             continue
         # Remove hashtags
-        if token.startswith('#'):
+        if token.startswith("#"):
             token = token[1:]
         # Remove stopwords
         if token in stop_words:
             continue
         # Remove urls
-        if token.startswith('http'):
+        if token.startswith("http"):
             continue
         # Expand common abbreviations and contractions
         token = contractions.fix(token)
         for key, value in abbreviations.items():
-            token = re.sub(r'\b' + key + r'\b', value, token)
+            token = re.sub(r"\b" + key + r"\b", value, token)
         # Convert emojis to words
-        token = demoji.replace_with_desc(token, '')
+        token = demoji.replace_with_desc(token, "")
         # Remove non-ASCII characters
-        token = re.sub(r'[^\x00-\x7F]+', '', token)
+        token = re.sub(r"[^\x00-\x7F]+", "", token)
         # Lemmatize
         token = lemmatizer.lemmatize(token)
-        if token != '':
+        if token != "":
             filtered_tokens.append(token)
     text = " ".join(filtered_tokens)
     return text

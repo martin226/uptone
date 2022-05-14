@@ -11,16 +11,16 @@ import sys
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Load model and tokenizer
-if not os.path.exists('./bin/tokenizer.pickle'):
-    print('Tokenizer not found')
+if not os.path.exists("./bin/tokenizer.pickle"):
+    print("Tokenizer not found")
     sys.exit(1)
-if not os.path.exists('./bin/hatespeech.bin'):
-    print('Model not found')
+if not os.path.exists("./bin/hatespeech.bin"):
+    print("Model not found")
     sys.exit(1)
 
-with open('./bin/tokenizer.pickle', 'rb') as handle:
+with open("./bin/tokenizer.pickle", "rb") as handle:
     tokenizer = pickle.load(handle)
-model = load_model('./bin/hatespeech.bin')
+model = load_model("./bin/hatespeech.bin")
 
 
 def make_predictions(tweets: list) -> list:
