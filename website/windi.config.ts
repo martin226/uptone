@@ -6,4 +6,12 @@ export default defineConfig({
    * @see https://windicss.org/features/attributify.html
    */
   attributify: true,
+  theme: {
+    extend: {
+      colors: {
+        primary: '#0091AD',
+        secondary: '#E5E5E5',
+      },
+    },
+  },
 });
