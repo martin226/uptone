@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true
+  },
+  "extends": ["plugin:prettier/recommended", "eslint:recommended"]
+}
