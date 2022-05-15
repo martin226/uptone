@@ -40,7 +40,7 @@
           that surrounds us everyday, Uptone aims to push that all out and allow
           users to focus on what matters most. In light of the recent buyout of
           Twitter and the upcoming policy change that would see the freedom of
-          all speech being permitted on Twitter, Upstone was born. Using
+          all speech being permitted on Twitter, Uptone was born. Using
           sentiment analysis and a convolutional neural network, the team at
           Uptone has developed a web extension that aims to limit the constant
           negative noise that takes over our Twitter feeds.
