@@ -10,7 +10,7 @@
       >
         <div class="space-y-4">
           <p class="leading-loose text-xl">
-            ToneUp is an AI-powered web extension that scans your Twitter feed
+            Uptone is an AI-powered web extension that scans your Twitter feed
             for hate speech and negativity, alerting you of toxic tweets and
             allowing you to mute them. By filtering out the noise, Uptone allows
             you to focus on what matters to you.
