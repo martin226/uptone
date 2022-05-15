@@ -1,0 +1,38 @@
+{
+  "name": "Uptone",
+  "version": "1.0.0",
+  "description": "Keep the web on an uplifting tone, with Uptone.",
+  "homepage_url": "https://github.com/martin226/uptone",
+  "manifest_version": 2,
+  "minimum_chrome_version": "80",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "uptone@xcfrg.github.io",
+      "strict_min_version": "80.0"
+    }
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "https://twitter.com/*",
+    "http://localhost:5000/*",
+    "storage",
+    "webRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "options_ui": {
+    "browser_style": true,
+    "page": "options.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  }
+}

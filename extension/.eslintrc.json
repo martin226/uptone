@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "extends": ["plugin:prettier/recommended", "eslint:recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2022
+  }
+}
