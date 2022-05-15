@@ -11,6 +11,7 @@ nltk = "^3.7"
 demoji = "^1.1.0"
 contractions = "^0.1.72"
 tensorflow = "^2.8.0"
+Flask-Cors = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
