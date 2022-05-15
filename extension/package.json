@@ -3,7 +3,7 @@
   "scripts": {
     "build": "parcel build src/manifest.json --no-content-hash --no-source-maps --dist-dir dist --no-cache --detailed-report 0",
     "lint": "yarn lint:prettier && yarn lint:js",
-    "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "lint:js": "eslint --ext \".js,.ts\" --ignore-path ../.gitignore .",
     "lint:prettier": "prettier --check .",
     "test": "run-p lint:* build",
