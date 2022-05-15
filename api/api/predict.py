@@ -49,9 +49,9 @@ def make_predictions(tweets: list) -> list:
     for i in range(len(p)):
         if predictions[i] == NEITHER:
             continue
-        if p[i][0] > 0.5:
+        if p[i][0] > 0.8:
             predictions[i] = HATE_SPEECH
-        elif p[i][1] > 0.5:
+        elif p[i][1] > 0.8:
             predictions[i] = OFFENSIVE
         else:
             predictions[i] = NEITHER
