@@ -24,7 +24,6 @@
     {
       "matches": ["https://twitter.com/*"],
       "js": ["content.js"],
-      "css": ["content.css"],
       "run_at": "document_end"
     }
   ],
@@ -33,7 +32,7 @@
     "page": "options.html"
   },
   "background": {
-    "persistent": false,
+    "persistent": true,
     "scripts": ["background.js"]
   }
 }
