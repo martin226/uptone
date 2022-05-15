@@ -2,15 +2,14 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/manifest.json --no-content-hash --no-source-maps --dist-dir dist --no-cache --detailed-report 0",
-    "lint": "yarn lint:css && yarn lint:js",
+    "lint": "yarn lint:prettier && yarn lint:js",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
-    "lint:style": "stylelint \"**/*.{css,scss,sass,html}\" --ignore-path ../.gitignore",
     "lint:js": "eslint --ext \".js,.ts\" --ignore-path ../.gitignore .",
     "lint:prettier": "prettier --check .",
     "test": "run-p lint:* build",
     "watch": "parcel watch src/manifest.json --dist-dir dist --host localhost --config @parcel/config-webextension",
-    "dev:firefox": "concurrently -P --kill-others-on-fail \"yarn watch\"  \"web-ext run -t firefox-desktop\"",
-    "dev:chromium": "concurrently -P --kill-others-on-fail \"yarn watch\"  \"web-ext run -t chromium\""
+    "dev:firefox": "concurrently --kill-others-on-fail \"yarn watch\"  \"web-ext run -t firefox-desktop\"",
+    "dev:chromium": "concurrently --kill-others-on-fail \"yarn watch\"  \"web-ext run -t chromium\""
   },
   "browserslist": [
     "defaults"
@@ -30,8 +29,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "parcel": "^2.5.0",
     "prettier": "^2.6.2",
-    "stylelint": "^14.8.2",
-    "stylelint-config-prettier": "^9.0.3",
     "web-ext": "^6.8.0"
   },
   "webExt": {
