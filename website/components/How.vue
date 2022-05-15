@@ -9,10 +9,14 @@
         lg="grid-cols-2"
       >
         <div
-          class="flex justify-center items-center border-4 border-primary order-last mt-4"
+          class="flex justify-center items-center order-last mt-4"
           lg="order-first mt-0"
         >
-          <img src="@/assets/img/step_1.png" alt="Step 1" />
+          <img
+            src="@/assets/img/step_1.png"
+            alt="Step 1"
+            class="border-4 border-primary"
+          />
         </div>
         <div class="space-y-4">
           <div
@@ -30,11 +34,12 @@
         class="grid grid-cols-1 space-x-16 justify-center items-center"
         lg="grid-cols-2"
       >
-        <div
-          class="flex justify-center items-center border-4 border-primary mt-4 order-last"
-          lg="mt-0"
-        >
-          <img src="@/assets/img/step_2.png" alt="Step 2" />
+        <div class="flex justify-center items-center mt-4 order-last" lg="mt-0">
+          <img
+            src="@/assets/img/step_2.png"
+            alt="Step 2"
+            class="border-4 border-primary"
+          />
         </div>
         <div class="space-y-4">
           <div
@@ -53,10 +58,14 @@
         lg="grid-cols-2"
       >
         <div
-          class="flex justify-center items-center border-4 border-primary order-last mt-4"
+          class="flex justify-center items-center order-last mt-4"
           lg="order-first mt-0"
         >
-          <img src="@/assets/img/step_3.png" alt="Step 3" />
+          <img
+            src="@/assets/img/step_3.png"
+            alt="Step 3"
+            class="border-4 border-primary"
+          />
         </div>
         <div class="space-y-4">
           <div
