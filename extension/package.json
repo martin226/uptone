@@ -6,7 +6,6 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "lint:js": "eslint --ext \".js,.ts\" --ignore-path ../.gitignore .",
     "lint:prettier": "prettier --check .",
-    "test": "run-p lint:* build",
     "watch": "parcel watch src/manifest.json --dist-dir dist --host localhost --config @parcel/config-webextension",
     "dev:firefox": "concurrently --kill-others-on-fail \"yarn watch\"  \"web-ext run -t firefox-desktop\"",
     "dev:chromium": "concurrently --kill-others-on-fail \"yarn watch\"  \"web-ext run -t chromium\""
